@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dario Hernan Guaraz</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./src/img/pokemonLogo.png" alt="" />
+      <div class="controls">
+        <input id="username" placeholder="Tu nombre" />
+        <select id="pairsSelect">
+          <option value="6">6 pares</option>
+          <option value="8" selected>8 pares</option>
+          <option value="10">10 pares</option>
+        </select>
+        <button id="startBtn">Comenzar</button>
+      </div>
+      <div class="status">
+        <div id="timer">00:00.00</div>
+        <div id="best">Mejor: —</div>
+      </div>
+    </header>
+
+    <main>
+      <div id="board" class="board" aria-live="polite"></div>
+    </main>
+
+    <footer><h2>Desarrollado Por Dario Hernan Guaraz</h2></footer>
+    <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>

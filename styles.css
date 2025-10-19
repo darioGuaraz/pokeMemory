@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0%;
+  font-family: Inter, system-ui, Arial;
+  background-color: #f9f9f9;
+}
+
+.header {
+  background-color: #fe1400;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  align-items: center;
+}
+
+.header img {
+  width: 20vw;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+}
+
+.controls input,
+.controls select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid rgb(0, 0, 0);
+  background: rgb(233, 233, 233);
+}
+
+.controls button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 4px solid #655cca;
+  background: #655cca;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.status {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-weight: 600;
+  justify-content: center;
+}
+#best,
+#timer {
+  color: #ffffff;
+}
+
+.board {
+  padding-inline: 10%;
+  padding-block: 6%;
+  background-image: url(./src/img/fondo.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 40vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+/* tarjeta */
+.card {
+  width: 8vw;
+  height: 24vh;
+  margin: 1%;
+  cursor: pointer;
+  border: 2px #000000 solid;
+  border-radius: 14px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.55s cubic-bezier(0.2, 0.9, 0.3, 1);
+  transform-style: preserve-3d;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(2, 6, 23, 0.6);
+}
+
+.card .card-front,
+.card .card-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card .card-front {
+  background-image: url(./src/img/card.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  color: #cbd5e1;
+}
+
+.card .card-back {
+  transform: rotateY(180deg);
+  background-color: #cabf5c;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* flip state */
+.card.is-flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* matched */
+.card.matched {
+  cursor: default;
+  opacity: 0.5;
+}
+
+footer {
+  text-align: center;
+
+  background-color: #f9f9f9;
+}
