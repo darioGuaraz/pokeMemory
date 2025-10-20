@@ -134,3 +134,39 @@ footer {
 
   background-color: #f9f9f9;
 }
+
+@media only screen and (min-width: 853px) and (max-width: 1024px) {
+  .header img {
+    margin-top: 8vh;
+    width: 60vw;
+  }
+
+  .board {
+    padding: 10px;
+  }
+  .card {
+    width: 30%;
+  }
+}
+
+@media (max-width: 852px) {
+  .header img {
+    margin-top: 8vh;
+    width: 90vw;
+  }
+  .status {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 1%;
+  }
+  #best {
+    font-size: 0.9rem;
+  }
+  .board {
+    padding: 10px;
+  }
+  .card {
+    width: 30%;
+  }
+}
