@@ -99,7 +99,7 @@ body {
 }
 
 .card .card-front {
-  background-image: url(./src/img/card.png);
+  background-image: url(./src/img/card.gif);
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
