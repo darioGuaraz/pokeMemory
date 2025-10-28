@@ -109,13 +109,13 @@ body {
 
 .card .card-back {
   transform: rotateY(180deg);
-  background-color: #cabf5c;
+  background-image: url(./src/img/fondo-card.gif);
 }
 
 .card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* flip state */
